@@ -1,0 +1,163 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    transition:all 1s;
+}
+
+#stopwatch img{
+    cursor: pointer;
+}
+
+#play{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 15px 15px 5px 5px;
+    background-color: #f1f1f1;
+    width: 80%;
+    margin: auto;
+    padding: 4px 12px 0 12px;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    border-radius: 15px 5px 5px 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tab #green:hover {
+    background-color: rgb(158, 255, 141);
+  }
+  .tab #orange:hover {
+    background-color: rgb(255, 143, 57);
+  }
+  .tab #blue:hover {
+    background-color: rgb(83, 183, 255);
+  }
+  .tab #green.active {
+    background-color: rgb(158, 255, 141);
+  }
+  .tab #orange.active {
+    background-color: rgb(255, 143, 57);
+  }
+  .tab #blue.active {
+    background-color: rgb(83, 183, 255);
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    width: 80%;
+    margin: auto;
+    display: none;
+    padding: 6px 12px;
+    border: 0 solid #ccc;
+    border-radius: 5px 5px 15px 15px;
+    border-top: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #clock{
+    background-color: rgb(158, 255, 141);
+  }
+  .content{
+    width: 50%;
+    margin: 0 25% ;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #clock .content{
+    background-color: rgb(189, 250, 179);
+    
+  }
+
+  #stopwatch{
+    background-color: rgb(255, 143, 57);
+
+  }
+  #stopwatch .content{
+    background-color: rgb(255, 174, 111);
+  }
+
+  #calculator{
+    background-color: rgb(83, 183, 255);
+  }
+  #calculator .content{
+    min-height: 40px;
+    background-color: rgb(145, 206, 251);
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+
+  .iteminput {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    text-align: right;
+    pointer-events: none;
+  }
+
+  .itemplus{
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .itemminus{
+    grid-column: 4;
+    grid-row: 3 ;
+  }
+  .itemmulti{
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .itemdevide{
+    grid-column: 4;
+    grid-row: 5;
+  }
+
+  .itemres{
+    grid-column: 1 /span 4;
+    grid-row: 6 ;
+  }
+
+  .grid-item:hover{
+    background-color: rgba(205, 205, 205, 0.8);
+  }
+
+  .grid-item:active{
+    background-color: rgba(211, 228, 255, 0.8);
+  }

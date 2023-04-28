@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" id="green" onclick="openCard(event, 'clock')">Clock</button>
+        <button class="tablinks" id="orange" onclick="openCard(event, 'stopwatch')">Stopwatch</button>
+        <button class="tablinks" id="blue" onclick="openCard(event, 'calculator')">Calculator</button>
+        <button class="tablinks" id="yellow" onclick="openCard(event, 'movie')">Movie</button>
+    </div>
+
+    <div id="clock" class="tabcontent">
+        <h1 class="title">Date and time</h1>
+        <div class="content">
+            <h1 id="actime">00/00/0000 00:00:00</h1>
+        </div>
+    </div>
+
+    <div id="stopwatch" class="tabcontent">
+        <h1 class="title">Stopwatch</h1>
+        <div class="content">
+            <h1 id="time">00:00:00</h1>
+            <div class="button">
+                <img src="images/stop.svg" onclick="watchStop()">
+                <img src="images/play.svg" id="play" onclick="watchStart()">
+                <img src="images/reset.svg" onclick="watchReset()">
+            </div>
+        </div>
+    </div>
+
+    <div id="calculator" class="tabcontent">
+        <h1>Calculator</h1>
+        <div class="content">
+            <div class="grid-item iteminput">Input field</div>
+            <div class="grid-item number">1</div>
+            <div class="grid-item number">2</div>
+            <div class="grid-item number">3</div>
+            <div class="grid-item number">4</div>
+            <div class="grid-item number">5</div>
+            <div class="grid-item number">6</div>
+            <div class="grid-item number">7</div>
+            <div class="grid-item number">8</div>
+            <div class="grid-item number">9</div>
+            <div class="grid-item number">0</div>
+            <div class="grid-item itemC">C</div>
+            <div class="grid-item itemdot">.</div>
+            <div class="grid-item itemplus">+</div>
+            <div class="grid-item itemminus">-</div>
+            <div class="grid-item itemmulti">&times</div>
+            <div class="grid-item itemdevide">&divide;</div>
+            <div class="grid-item itemres">=</div>
+        </div>
+
+    </div>
+
+    <div id="movie" class="tabcontent">
+        <h1 class="title">Movies</h1>
+        <div class="content">
+                    </div>
+    </div>
+
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
